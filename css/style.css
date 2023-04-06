@@ -1,0 +1,562 @@
+body {
+	background: #703304;
+  font-family: 'Times New Roman', sans-serif;
+  font-style: normal;
+	font-weight: 300;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto
+}
+
+h1,h2,h3,h4,h5,h6,
+.navbar-default, .btn {
+  font-family: 'Times New Roman', cursive;
+  font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 52px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+h3 {
+  color: #d5d4d4;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom: 4px;
+}
+
+h4 {
+  font-weight: bold;
+  color:#b9b9b9
+}
+
+p {
+  color: #999;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+hr {
+  border-bottom-color: #999;
+  width: 100px;
+}
+
+.section-btn {
+  background-color: #4A2203;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 14px 36px;
+  margin-top: 26px;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-btn:hover {
+  background: #321602;
+  border-top-color: #ffffff;
+  border-right-color: #222;
+  border-bottom-color: #ffffff;
+  border-left-color: #222;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 62px;
+  text-align: center;
+}
+
+#chocomaster,
+#aboutcompany,
+#company,
+#asortument,
+#buy {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#company,
+#asortument {
+  text-align: center;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-pulse {
+  width: 60px;
+  height: 60px;
+  background-color: #482002;
+  border-radius: 100%;
+  animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+.navbar-default {
+  background: rgba(99,45,4, 0.9);
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-brand {
+  align-items: center;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus,
+.navbar-default .nav li a.current {
+  color: #8a8a8a;
+}
+
+#home {
+    background: url('../images/home-main.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    height: 680px;
+}
+
+#home .overlay {
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#home img {
+  width: 100%;
+  height: auto;
+}
+
+#home .home-thumb {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+#home p,
+#buy p {
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+#home .section-btn {
+  background: #4A2203;
+}
+
+#home .section-btn:hover {
+  background: #321602;
+}
+
+#company {
+  background: url('../images/about-company-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#company p {
+  color: #666;
+  font-size: 26px;
+  line-height: 42px;
+}
+
+#chocomaster img {
+  width: 100%;
+}
+
+#chocomaster .chocomaster-thumb {
+  margin-bottom: 32px;
+  position: relative;
+  text-align: center;
+}
+
+#chocomaster .chocomaster-overlay h3 {
+  padding-bottom: 0px;
+}
+
+#chocomaster .chocomaster-overlay {
+  background-color: #4a2204;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 450ms;
+}
+
+#chocomaster .chocomaster-thumb:hover .chocomaster-overlay {
+  height: 100%;
+  background-color: #330d0d;
+  color: #222;
+  padding-top: 30%;
+  opacity: 0.9;
+}
+
+#chocomaster .chocomaster-thumb:hover h4 {
+  color: #ffffff;
+}
+
+#aboutcompany .col-md-3 {
+  display: block;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+#aboutcompany img {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+#aboutcompany img:hover {
+  box-shadow: 0px 16px 22px 0px rgba(0, 0, 0, 0.3);
+  top: -6px;
+}
+
+#asortument {
+  background: #4A2203;
+}
+
+#asortument .asortument-text {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+#asortument .about-text {
+    color: #a20000;
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 4px;
+}
+
+#asortument .asortument-plan {
+  background-color: #ffffff;
+  color: #4A2203;
+  border-radius: 2px;
+  margin-bottom: 32px;
+}
+
+#asortument .asortument-plan .asortument-month {
+  padding: 14px 10px 6px 10px;
+}
+
+#asortument .asortument-plan .asortument-month h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #773b0d;
+}
+
+#asortument .asortument-plan .section-btn {
+  background: #000000;
+  position: relative;
+  top: 20px;
+}
+
+#asortument .asortument-plan .section-btn:hover {
+  background-color: #321602;
+  color: #ffffff;
+}
+
+#buy {
+    background: url('../images/zam-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative;
+}
+
+#buy .overlay {
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#buy .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #eee;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  height: 50px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#buy .form-control:focus {
+  border-color: #ffffff;
+}
+
+#buy input[type="submit"] {
+  background-color: #4A2203;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  height: 55px;
+}
+
+#buy input[type="submit"]:hover {
+  background-color:#321602;
+  color: #ffffff;
+}
+
+#buy .form-control::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer span {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer p {
+  padding-top: 16px;
+}
+
+#footer h3 {
+  color: #d5d4d4;
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom: 4px;
+}
+
+#footer h4 {
+  color:#999;
+  font-weight: normal;
+}
+
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  border-radius: 100px;
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 22px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.go-top:hover {
+    background: #2f1502;
+    color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+	width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  
+  .img-logo{
+    width: 120px;
+    align-items: center;
+    margin-top: 11px;
+  }
+  
+  .navbar-default .navbar-nav li a {
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+  
+  .section-btn {
+    padding: 10px 34px 12px;
+  }
+
+  #home, #home .overlay {
+    height: 90vh;
+  }
+
+  #home .home-thumb {
+    padding-top: 0px;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about .about-thumb {
+    margin-top: 62px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .img-logo{
+    width: 120px;
+    align-items: center;
+    margin-top: 7px;
+  }
+  
+  .navbar-default .navbar-nav li a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .section-title {
+    padding-bottom: 32px;
+  }
+
+  #about, #company,
+  #aboutcompany,
+  #asortument, #buy {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+
+   body {
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .img-logo{
+    width: 150px;
+    align-items: center;
+  }
+
+  #home, #home .overlay {
+    height: 100vh;
+  }
+
+  #home img {
+    position: relative;
+    display: inline-block;
+  }
+
+  #home .home-thumb {
+    padding-top: 32px;
+    padding-left: 0px;
+  }
+
+  #asortument .asortument-plan {
+    margin-bottom: 62px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .img-logo{
+    width: 150px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
